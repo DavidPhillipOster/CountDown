@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		633D4BCA0F35447200AD74A1 /* GrayFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 633D4BC70F35447200AD74A1 /* GrayFrame.png */; };
+		633D4BCB0F35447200AD74A1 /* GreenFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 633D4BC80F35447200AD74A1 /* GreenFrame.png */; };
+		633D4BCC0F35447200AD74A1 /* RedFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 633D4BC90F35447200AD74A1 /* RedFrame.png */; };
+		633DF6BE0F357D7300E22659 /* CountDownWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 633DF6BD0F357D7300E22659 /* CountDownWindow.m */; };
+		6376A78E0F4D3EDC00622748 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6376A78D0F4D3EDC00622748 /* ApplicationServices.framework */; };
+		6377899E0F47F0CE00AF5A55 /* CountDown.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6377899D0F47F0CE00AF5A55 /* CountDown.icns */; };
+		637789A00F47F37400AF5A55 /* CountDoc.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6377899F0F47F37400AF5A55 /* CountDoc.icns */; };
+		637789A50F47F3BD00AF5A55 /* Blank.icns in Resources */ = {isa = PBXBuildFile; fileRef = 637789A40F47F3BD00AF5A55 /* Blank.icns */; };
+		6384EDD20F34EB8E001B4F3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384EDD00F34EB8E001B4F3D /* main.m */; };
+		6384EDDD0F34EBA0001B4F3D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6384EDD40F34EBA0001B4F3D /* Credits.rtf */; };
+		6384EDDE0F34EBA0001B4F3D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6384EDD60F34EBA0001B4F3D /* InfoPlist.strings */; };
+		6384EDE70F34EC25001B4F3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384EDE60F34EC25001B4F3D /* AppDelegate.m */; };
+		6384EE0F0F34F1AC001B4F3D /* GradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384EE0E0F34F1AC001B4F3D /* GradientView.m */; };
+		6384EE120F34F1C5001B4F3D /* StretchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384EE110F34F1C5001B4F3D /* StretchImageView.m */; };
+		6384EE1C0F34F22E001B4F3D /* StretchableImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384EE1B0F34F22E001B4F3D /* StretchableImage.m */; };
+		6384EE1F0F34F240001B4F3D /* OnOffButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384EE1E0F34F240001B4F3D /* OnOffButton.m */; };
+		6384EE220F34F278001B4F3D /* StretchableTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384EE210F34F278001B4F3D /* StretchableTextView.m */; };
+		6384EE340F34F74B001B4F3D /* CDError.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384EE330F34F74B001B4F3D /* CDError.m */; };
+		6384EE390F34F7A0001B4F3D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6384EE370F34F7A0001B4F3D /* Localizable.strings */; };
+		63E0F3150F4A88A00013D8E1 /* TimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E0F3140F4A88A00013D8E1 /* TimeFormatter.m */; };
+		63E1BE87126BD78C00A3D76D /* DocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E1BE86126BD78C00A3D76D /* DocumentController.m */; };
+		63EFCC2625001FB9007CAF4E /* CountDownDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 6384EDCF0F34EB8E001B4F3D /* CountDownDoc.m */; };
+		63EFCC33250025E3007CAF4E /* CountDownDoc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63EFCC2D250025E3007CAF4E /* CountDownDoc.xib */; };
+		63EFCC34250025E3007CAF4E /* Details.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63EFCC2F250025E3007CAF4E /* Details.xib */; };
+		63EFCC35250025E3007CAF4E /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63EFCC31250025E3007CAF4E /* Main.xib */; };
+		63EFCC3825004303007CAF4E /* NSTimer+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EFCC3725004303007CAF4E /* NSTimer+CountDown.m */; };
+		63EFCC3B250049AD007CAF4E /* Heartbeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EFCC3A250049AD007CAF4E /* Heartbeat.m */; };
+		63F88E1D0F56E97A00B6551D /* CountDown.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 63F88E1C0F56E97A00B6551D /* CountDown.sdef */; };
+		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FBA07B3F13500E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		633D4BC70F35447200AD74A1 /* GrayFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GrayFrame.png; sourceTree = "<group>"; };
+		633D4BC80F35447200AD74A1 /* GreenFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenFrame.png; sourceTree = "<group>"; };
+		633D4BC90F35447200AD74A1 /* RedFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedFrame.png; sourceTree = "<group>"; };
+		633DF6BC0F357D7300E22659 /* CountDownWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownWindow.h; sourceTree = "<group>"; };
+		633DF6BD0F357D7300E22659 /* CountDownWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownWindow.m; sourceTree = "<group>"; };
+		6376A78D0F4D3EDC00622748 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		6377899D0F47F0CE00AF5A55 /* CountDown.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CountDown.icns; sourceTree = "<group>"; };
+		6377899F0F47F37400AF5A55 /* CountDoc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CountDoc.icns; sourceTree = "<group>"; };
+		637789A40F47F3BD00AF5A55 /* Blank.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Blank.icns; sourceTree = "<group>"; };
+		6384EDCE0F34EB8E001B4F3D /* CountDownDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownDoc.h; sourceTree = "<group>"; };
+		6384EDCF0F34EB8E001B4F3D /* CountDownDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownDoc.m; sourceTree = "<group>"; };
+		6384EDD00F34EB8E001B4F3D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6384EDD50F34EBA0001B4F3D /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		6384EDD70F34EBA0001B4F3D /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6384EDDC0F34EBA0001B4F3D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6384EDE50F34EC25001B4F3D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6384EDE60F34EC25001B4F3D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6384EE0E0F34F1AC001B4F3D /* GradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientView.m; sourceTree = "<group>"; };
+		6384EE100F34F1C5001B4F3D /* StretchImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StretchImageView.h; sourceTree = "<group>"; };
+		6384EE110F34F1C5001B4F3D /* StretchImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StretchImageView.m; sourceTree = "<group>"; };
+		6384EE1A0F34F22E001B4F3D /* StretchableImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StretchableImage.h; sourceTree = "<group>"; };
+		6384EE1B0F34F22E001B4F3D /* StretchableImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StretchableImage.m; sourceTree = "<group>"; };
+		6384EE1D0F34F240001B4F3D /* OnOffButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnOffButton.h; sourceTree = "<group>"; };
+		6384EE1E0F34F240001B4F3D /* OnOffButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OnOffButton.m; sourceTree = "<group>"; };
+		6384EE200F34F278001B4F3D /* StretchableTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StretchableTextView.h; sourceTree = "<group>"; };
+		6384EE210F34F278001B4F3D /* StretchableTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StretchableTextView.m; sourceTree = "<group>"; };
+		6384EE310F34F71A001B4F3D /* CDError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDError.h; sourceTree = "<group>"; };
+		6384EE330F34F74B001B4F3D /* CDError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDError.m; sourceTree = "<group>"; };
+		6384EE380F34F7A0001B4F3D /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = Resources/English.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		63E0F3130F4A88A00013D8E1 /* TimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeFormatter.h; sourceTree = "<group>"; };
+		63E0F3140F4A88A00013D8E1 /* TimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeFormatter.m; sourceTree = "<group>"; };
+		63E1BE85126BD78C00A3D76D /* DocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentController.h; sourceTree = "<group>"; };
+		63E1BE86126BD78C00A3D76D /* DocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
+		63EFCC2525001DC5007CAF4E /* GradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
+		63EFCC2E250025E3007CAF4E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/CountDownDoc.xib; sourceTree = "<group>"; };
+		63EFCC30250025E3007CAF4E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Details.xib; sourceTree = "<group>"; };
+		63EFCC32250025E3007CAF4E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Main.xib; sourceTree = "<group>"; };
+		63EFCC36250042DA007CAF4E /* NSTimer+CountDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+CountDown.h"; sourceTree = "<group>"; };
+		63EFCC3725004303007CAF4E /* NSTimer+CountDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CountDown.m"; sourceTree = "<group>"; };
+		63EFCC39250049AD007CAF4E /* Heartbeat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Heartbeat.h; sourceTree = "<group>"; };
+		63EFCC3A250049AD007CAF4E /* Heartbeat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Heartbeat.m; sourceTree = "<group>"; };
+		63F88E1C0F56E97A00B6551D /* CountDown.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.sdef; path = CountDown.sdef; sourceTree = "<group>"; };
+		8D15AC370486D014006FF6A4 /* CountDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D15AC330486D014006FF6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */,
+				6376A78E0F4D3EDC00622748 /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6376A78D0F4D3EDC00622748 /* ApplicationServices.framework */,
+				1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A8FEA54F5311CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A37F4C4FDCFA73011CA2CEA /* AppKit.framework */,
+				13E42FBA07B3F13500E4EEF1 /* CoreData.framework */,
+				2A37F4C5FDCFA73011CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB0FE9D524F11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D15AC370486D014006FF6A4 /* CountDown.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A37F4AAFDCFA73011CA2CEA /* CountDown */ = {
+			isa = PBXGroup;
+			children = (
+				6384EDCC0F34EB8E001B4F3D /* Source */,
+				6384EDD30F34EBA0001B4F3D /* Resources */,
+				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
+				19C28FB0FE9D524F11CA2CBB /* Products */,
+			);
+			name = CountDown;
+			sourceTree = "<group>";
+		};
+		2A37F4C3FDCFA73011CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A6FEA54F5311CA2CBB /* Linked Frameworks */,
+				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6384EDCC0F34EB8E001B4F3D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				63E0F3130F4A88A00013D8E1 /* TimeFormatter.h */,
+				63E0F3140F4A88A00013D8E1 /* TimeFormatter.m */,
+				6384EDE50F34EC25001B4F3D /* AppDelegate.h */,
+				6384EDE60F34EC25001B4F3D /* AppDelegate.m */,
+				6384EE310F34F71A001B4F3D /* CDError.h */,
+				6384EE330F34F74B001B4F3D /* CDError.m */,
+				6384EDCE0F34EB8E001B4F3D /* CountDownDoc.h */,
+				6384EDCF0F34EB8E001B4F3D /* CountDownDoc.m */,
+				63EFCC36250042DA007CAF4E /* NSTimer+CountDown.h */,
+				63EFCC3725004303007CAF4E /* NSTimer+CountDown.m */,
+				63E1BE85126BD78C00A3D76D /* DocumentController.h */,
+				63E1BE86126BD78C00A3D76D /* DocumentController.m */,
+				633DF6BC0F357D7300E22659 /* CountDownWindow.h */,
+				633DF6BD0F357D7300E22659 /* CountDownWindow.m */,
+				63EFCC39250049AD007CAF4E /* Heartbeat.h */,
+				63EFCC3A250049AD007CAF4E /* Heartbeat.m */,
+				6384EDD00F34EB8E001B4F3D /* main.m */,
+				6384EE0C0F34F1A0001B4F3D /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6384EDD30F34EBA0001B4F3D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				63EFCC2D250025E3007CAF4E /* CountDownDoc.xib */,
+				63EFCC2F250025E3007CAF4E /* Details.xib */,
+				63EFCC31250025E3007CAF4E /* Main.xib */,
+				637789A40F47F3BD00AF5A55 /* Blank.icns */,
+				6377899D0F47F0CE00AF5A55 /* CountDown.icns */,
+				6377899F0F47F37400AF5A55 /* CountDoc.icns */,
+				63F88E1C0F56E97A00B6551D /* CountDown.sdef */,
+				633D4BC70F35447200AD74A1 /* GrayFrame.png */,
+				633D4BC80F35447200AD74A1 /* GreenFrame.png */,
+				633D4BC90F35447200AD74A1 /* RedFrame.png */,
+				6384EE370F34F7A0001B4F3D /* Localizable.strings */,
+				6384EDD40F34EBA0001B4F3D /* Credits.rtf */,
+				6384EDD60F34EBA0001B4F3D /* InfoPlist.strings */,
+				6384EDDC0F34EBA0001B4F3D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6384EE0C0F34F1A0001B4F3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				63EFCC2525001DC5007CAF4E /* GradientView.h */,
+				6384EE0E0F34F1AC001B4F3D /* GradientView.m */,
+				6384EE1D0F34F240001B4F3D /* OnOffButton.h */,
+				6384EE1E0F34F240001B4F3D /* OnOffButton.m */,
+				6384EE1A0F34F22E001B4F3D /* StretchableImage.h */,
+				6384EE1B0F34F22E001B4F3D /* StretchableImage.m */,
+				6384EE100F34F1C5001B4F3D /* StretchImageView.h */,
+				6384EE110F34F1C5001B4F3D /* StretchImageView.m */,
+				6384EE200F34F278001B4F3D /* StretchableTextView.h */,
+				6384EE210F34F278001B4F3D /* StretchableTextView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D15AC270486D014006FF6A4 /* CountDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "CountDown" */;
+			buildPhases = (
+				8D15AC2B0486D014006FF6A4 /* Resources */,
+				8D15AC300486D014006FF6A4 /* Sources */,
+				8D15AC330486D014006FF6A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CountDown;
+			productInstallPath = "$(HOME)/Applications";
+			productName = CountDown;
+			productReference = 8D15AC370486D014006FF6A4 /* CountDown.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				};
+			};
+			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "CountDown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* CountDown */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D15AC270486D014006FF6A4 /* CountDown */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D15AC2B0486D014006FF6A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6384EDDD0F34EBA0001B4F3D /* Credits.rtf in Resources */,
+				63EFCC35250025E3007CAF4E /* Main.xib in Resources */,
+				6384EDDE0F34EBA0001B4F3D /* InfoPlist.strings in Resources */,
+				6384EE390F34F7A0001B4F3D /* Localizable.strings in Resources */,
+				633D4BCA0F35447200AD74A1 /* GrayFrame.png in Resources */,
+				633D4BCB0F35447200AD74A1 /* GreenFrame.png in Resources */,
+				633D4BCC0F35447200AD74A1 /* RedFrame.png in Resources */,
+				63EFCC34250025E3007CAF4E /* Details.xib in Resources */,
+				6377899E0F47F0CE00AF5A55 /* CountDown.icns in Resources */,
+				63EFCC33250025E3007CAF4E /* CountDownDoc.xib in Resources */,
+				637789A00F47F37400AF5A55 /* CountDoc.icns in Resources */,
+				637789A50F47F3BD00AF5A55 /* Blank.icns in Resources */,
+				63F88E1D0F56E97A00B6551D /* CountDown.sdef in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D15AC300486D014006FF6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6384EDD20F34EB8E001B4F3D /* main.m in Sources */,
+				63EFCC3B250049AD007CAF4E /* Heartbeat.m in Sources */,
+				6384EDE70F34EC25001B4F3D /* AppDelegate.m in Sources */,
+				6384EE0F0F34F1AC001B4F3D /* GradientView.m in Sources */,
+				6384EE120F34F1C5001B4F3D /* StretchImageView.m in Sources */,
+				6384EE1C0F34F22E001B4F3D /* StretchableImage.m in Sources */,
+				6384EE1F0F34F240001B4F3D /* OnOffButton.m in Sources */,
+				6384EE220F34F278001B4F3D /* StretchableTextView.m in Sources */,
+				6384EE340F34F74B001B4F3D /* CDError.m in Sources */,
+				633DF6BE0F357D7300E22659 /* CountDownWindow.m in Sources */,
+				63EFCC3825004303007CAF4E /* NSTimer+CountDown.m in Sources */,
+				63E0F3150F4A88A00013D8E1 /* TimeFormatter.m in Sources */,
+				63E1BE87126BD78C00A3D76D /* DocumentController.m in Sources */,
+				63EFCC2625001FB9007CAF4E /* CountDownDoc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6384EDD40F34EBA0001B4F3D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6384EDD50F34EBA0001B4F3D /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		6384EDD60F34EBA0001B4F3D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6384EDD70F34EBA0001B4F3D /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6384EE370F34F7A0001B4F3D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6384EE380F34F7A0001B4F3D /* English */,
+			);
+			name = Localizable.strings;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+		63EFCC2D250025E3007CAF4E /* CountDownDoc.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63EFCC2E250025E3007CAF4E /* English */,
+			);
+			name = CountDownDoc.xib;
+			sourceTree = "<group>";
+		};
+		63EFCC2F250025E3007CAF4E /* Details.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63EFCC30250025E3007CAF4E /* English */,
+			);
+			name = Details.xib;
+			sourceTree = "<group>";
+		};
+		63EFCC31250025E3007CAF4E /* Main.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63EFCC32250025E3007CAF4E /* English */,
+			);
+			name = Main.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C05733C808A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 4;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CountDown;
+				PRODUCT_NAME = CountDown;
+				SDKROOT = macosx;
+				USE_HEADERMAP = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C05733C908A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 4;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = "";
+				INFOPLIST_FILE = Resources/Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MARKETING_VERSION = 1.0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.CountDown;
+				PRODUCT_NAME = CountDown;
+				SDKROOT = macosx;
+				USE_HEADERMAP = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C05733CC08A9546B00998B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/CountDown.pch;
+				GCC_VERSION = 4.0;
+				"GCC_VERSION[sdk=macosx10.6][arch=ppc64]" = 4.2;
+				"GCC_VERSION[sdk=macosx10.6][arch=x86_64]" = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				"SDKROOT[arch=ppc64]" = macosx10.6;
+				"SDKROOT[arch=x86_64]" = macosx10.6;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		C05733CD08A9546B00998B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Source/CountDown.pch;
+				GCC_VERSION = 4.0;
+				"GCC_VERSION[sdk=macosx10.6][arch=ppc64]" = 4.2;
+				"GCC_VERSION[sdk=macosx10.6][arch=x86_64]" = 4.2;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = macosx;
+				"SDKROOT[arch=ppc64]" = macosx10.6;
+				"SDKROOT[arch=x86_64]" = macosx10.6;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C05733C708A9546B00998B17 /* Build configuration list for PBXNativeTarget "CountDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733C808A9546B00998B17 /* Debug */,
+				C05733C908A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "CountDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C05733CC08A9546B00998B17 /* Debug */,
+				C05733CD08A9546B00998B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A37F4A9FDCFA73011CA2CEA /* Project object */;
+}
