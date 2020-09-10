@@ -11,6 +11,7 @@
 		633D4BCB0F35447200AD74A1 /* GreenFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 633D4BC80F35447200AD74A1 /* GreenFrame.png */; };
 		633D4BCC0F35447200AD74A1 /* RedFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 633D4BC90F35447200AD74A1 /* RedFrame.png */; };
 		633DF6BE0F357D7300E22659 /* CountDownWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 633DF6BD0F357D7300E22659 /* CountDownWindow.m */; };
+		634A33282509D8D500D37DD7 /* CountDoc.png in Resources */ = {isa = PBXBuildFile; fileRef = 634A33272509D8D500D37DD7 /* CountDoc.png */; };
 		6376A78E0F4D3EDC00622748 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6376A78D0F4D3EDC00622748 /* ApplicationServices.framework */; };
 		6377899E0F47F0CE00AF5A55 /* CountDown.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6377899D0F47F0CE00AF5A55 /* CountDown.icns */; };
 		637789A00F47F37400AF5A55 /* CountDoc.icns in Resources */ = {isa = PBXBuildFile; fileRef = 6377899F0F47F37400AF5A55 /* CountDoc.icns */; };
@@ -48,6 +49,7 @@
 		633D4BC90F35447200AD74A1 /* RedFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedFrame.png; sourceTree = "<group>"; };
 		633DF6BC0F357D7300E22659 /* CountDownWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownWindow.h; sourceTree = "<group>"; };
 		633DF6BD0F357D7300E22659 /* CountDownWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownWindow.m; sourceTree = "<group>"; };
+		634A33272509D8D500D37DD7 /* CountDoc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CountDoc.png; sourceTree = "<group>"; };
 		6376A78D0F4D3EDC00622748 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
 		6377899D0F47F0CE00AF5A55 /* CountDown.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CountDown.icns; sourceTree = "<group>"; };
 		6377899F0F47F37400AF5A55 /* CountDoc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CountDoc.icns; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				63EFCC2F250025E3007CAF4E /* Details.xib */,
 				63EFCC31250025E3007CAF4E /* Main.xib */,
 				637789A40F47F3BD00AF5A55 /* Blank.icns */,
+				634A33272509D8D500D37DD7 /* CountDoc.png */,
 				6377899D0F47F0CE00AF5A55 /* CountDown.icns */,
 				6377899F0F47F37400AF5A55 /* CountDoc.icns */,
 				63F88E1C0F56E97A00B6551D /* CountDown.sdef */,
@@ -275,6 +278,7 @@
 				63EFCC34250025E3007CAF4E /* Details.xib in Resources */,
 				6377899E0F47F0CE00AF5A55 /* CountDown.icns in Resources */,
 				63EFCC33250025E3007CAF4E /* CountDownDoc.xib in Resources */,
+				634A33282509D8D500D37DD7 /* CountDoc.png in Resources */,
 				637789A00F47F37400AF5A55 /* CountDoc.icns in Resources */,
 				637789A50F47F3BD00AF5A55 /* Blank.icns in Resources */,
 				63F88E1D0F56E97A00B6551D /* CountDown.sdef in Resources */,
@@ -367,7 +371,6 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 4;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -377,7 +380,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CountDown;
 				PRODUCT_NAME = CountDown;
 				SDKROOT = macosx;
@@ -392,7 +395,6 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -401,7 +403,7 @@
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CountDown;
 				PRODUCT_NAME = CountDown;
 				SDKROOT = macosx;

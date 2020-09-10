@@ -192,6 +192,33 @@
   [self setMaxSeconds:tempMaxSeconds];
 }
 
+- (void)removeCustomDocIconToURL:(NSURL *)url {
+  NSWorkspace *ws = [NSWorkspace sharedWorkspace];
+  [ws setIcon:nil forFile:[url path] options:0];
+}
+
+- (void)attachCustomDocIconToURL:(NSURL *)url {
+  NSWorkspace *ws = [NSWorkspace sharedWorkspace];
+  NSImage *docIcon = [[NSImage imageNamed:@"CountDoc.png"] copy];
+  if (docIcon) {
+    NSString *timeString = [self.timeFormat stringFromInt:self.maxSeconds];
+    [docIcon lockFocus];
+    NSRect bounds = NSMakeRect(101+4, 133, 313-2*4, 232);
+    [[self.timerView class] draw:timeString color:self.timerView.color font:self.timerView.fontName bounds:bounds];
+    [docIcon unlockFocus];
+    [ws setIcon:docIcon forFile:[url path] options:0];
+  }
+}
+
+
+- (BOOL)writeSafelyToURL:(NSURL *)url ofType:(NSString *)typeName forSaveOperation:(NSSaveOperationType)saveOperation error:(NSError **)outError {
+  [self removeCustomDocIconToURL:url];
+  BOOL result = [super writeSafelyToURL:url ofType:typeName forSaveOperation:saveOperation error:outError];
+  if (result && [typeName isEqual:@"DocumentType"]) {
+    [self attachCustomDocIconToURL:url];
+  }
+  return result;
+}
 
 - (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError {
   NSData *result = nil;
@@ -223,8 +250,10 @@
                      options:NSPropertyListImmutable
                       format:nil
                        error:&error];
-    if (outError) {
-      *outError = error;
+    if (error) {
+      if (outError) {
+        *outError = error;
+      }
     } else {
       [self setTempDoc:dict];
       result = YES;
