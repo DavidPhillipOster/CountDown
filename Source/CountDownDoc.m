@@ -36,7 +36,7 @@
 @property int alarmPhase; // increments each time alarm timer runs.
 @property (getter=isSoundOn) BOOL soundOn;
 @property (copy) NSString *soundPath;
-@property int requestUserID;
+@property (nonatomic) int requestUserID;
 @property (nonatomic) NSDictionary *tempDoc;  // Used to hold values between read time and show time.
 
 - (void)setTempDoc:(NSDictionary *)doc;
@@ -82,6 +82,7 @@
   [Heartbeat.sharedInstance removeSubscriber:self];
   [self cancelUserAttention];
   [_timer invalidate];
+  _timer = nil;
 }
 
 - (void)awakeFromNib {
@@ -89,7 +90,6 @@
     _timeFormat = [[TimeFormatter alloc] init];
   }
 }
-
 
 - (NSString *)windowNibName {
   // Override returning the nib file name of the document
@@ -153,11 +153,9 @@
     // initial default for new untitled documents is 5 minutes
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSDictionary *defaultDoc = [userDefaults objectForKey:@"defaultDoc"];
-    [self setTempDoc:defaultDoc];
+    _tempDoc = defaultDoc;
   }
-  [self fromDict:_tempDoc];
-  [self setTempDoc:nil];
-  [self setState:kRunningState];
+  [self consumeTempDoc];
 }
 
 - (NSDictionary *)asDictionary {
@@ -209,7 +207,6 @@
     [ws setIcon:docIcon forFile:[url path] options:0];
   }
 }
-
 
 - (BOOL)writeSafelyToURL:(NSURL *)url ofType:(NSString *)typeName forSaveOperation:(NSSaveOperationType)saveOperation error:(NSError **)outError {
   [self removeCustomDocIconToURL:url];
@@ -299,9 +296,13 @@
 }
 
 - (void)cancelUserAttention {
+  self.requestUserID = 0;
+}
+
+- (void)setRequestUserID:(int)requestUserID {
   if (_requestUserID) {
     [NSApp cancelUserAttentionRequest:_requestUserID];
-    _requestUserID = 0;
+    _requestUserID = requestUserID;
   }
 }
 
@@ -316,7 +317,7 @@
   [Heartbeat.sharedInstance removeSubscriber:self];
   _alarmPhase = 0;
   if (_soundOn && _soundPath) {
-    _requestUserID = [NSApp requestUserAttention:NSCriticalRequest];
+    self.requestUserID = [NSApp requestUserAttention:NSCriticalRequest];
     NSSound *sound = [[NSSound alloc] initWithContentsOfFile:_soundPath byReference:YES];
     [sound setDelegate:self];
     [sound play];
@@ -408,7 +409,6 @@
   }
 }
 
-
 - (void)insertText:(NSString *)insertString {
   if (kIdleState == self.state) {
     NSMutableString *s = [[_timeFormat stringFromInt:_maxSeconds] mutableCopy];
@@ -496,9 +496,17 @@
 - (void)setTempDoc:(NSDictionary *)doc {
   if (_tempDoc != doc) {
     _tempDoc = doc;
+    [self consumeTempDoc];
   }
 }
 
+- (void)consumeTempDoc {
+  if (self.timerView) {
+    [self fromDict:_tempDoc];
+    _tempDoc = nil;
+    [self setState:kRunningState];
+  }
+}
 
 - (OSType)timerState {
   switch (self.state) {
@@ -590,7 +598,6 @@
   }
 }
 
-
 - (IBAction)toggleOneTimer:(id)sender {
   if (kIdleState == _state) {
     [self setState:kRunningState];
@@ -598,7 +605,6 @@
     [self setState:kIdleState];
   }
 }
-
 
 - (void)sound:(NSSound *)sound didFinishPlaying:(BOOL)didFinish {
   if (didFinish) {
@@ -628,7 +634,6 @@
   }
 }
 
-
 - (IBAction)popupDidChange:(id)sender {
   NSMenuItem *item = [[sender itemArray] objectAtIndex:[sender indexOfSelectedItem]];
   NSString *path = [item representedObject];
@@ -643,7 +648,6 @@
   [self hideInfo];
 }
 
-
 - (BOOL)validateMenuItem:(NSMenuItem *)menuItem {
   if ([menuItem action] == @selector(toggleInfo:)) {
     if ([self isInfoShowing]) {
@@ -652,7 +656,7 @@
       [menuItem setTitle:NSLocalizedString(@"Show Info", @"")];
     }
   } 
-  return YES;
+  return [super validateMenuItem:menuItem];
 }
 
 - (NSString *)soundsFolderInDomain:(short)theDomain {
