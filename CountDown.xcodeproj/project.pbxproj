@@ -242,6 +242,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1160;
+				TargetAttributes = {
+					8D15AC270486D014006FF6A4 = {
+						DevelopmentTeam = 2X3M9VFULE;
+					};
 				};
 			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "CountDown" */;
