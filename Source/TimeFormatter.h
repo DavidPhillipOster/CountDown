@@ -14,8 +14,10 @@
 #import <Foundation/Foundation.h>
 
 
-@interface TimeFormatter : NSFormatter
+@interface TimeFormatter : NSFormatter {
 
+
+}
 - (NSString *)stringForObjectValue:(id)obj;
 
 

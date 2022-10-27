@@ -49,7 +49,14 @@
 		633D4BC90F35447200AD74A1 /* RedFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedFrame.png; sourceTree = "<group>"; };
 		633DF6BC0F357D7300E22659 /* CountDownWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownWindow.h; sourceTree = "<group>"; };
 		633DF6BD0F357D7300E22659 /* CountDownWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownWindow.m; sourceTree = "<group>"; };
+		6342EEA90F7695A900AE3733 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
 		634A33272509D8D500D37DD7 /* CountDoc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CountDoc.png; sourceTree = "<group>"; };
+		635A5012290B12C6006EE643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/CountDownDoc.xib; sourceTree = "<group>"; };
+		635A5013290B12C6006EE643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Details.xib; sourceTree = "<group>"; };
+		635A5014290B12C6006EE643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Main.xib; sourceTree = "<group>"; };
+		635A5015290B12D1006EE643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		635A5016290B12D1006EE643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		635A5017290B12D1006EE643 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = ../Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6376A78D0F4D3EDC00622748 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
 		6377899D0F47F0CE00AF5A55 /* CountDown.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CountDown.icns; sourceTree = "<group>"; };
 		6377899F0F47F37400AF5A55 /* CountDoc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = CountDoc.icns; sourceTree = "<group>"; };
@@ -57,8 +64,6 @@
 		6384EDCE0F34EB8E001B4F3D /* CountDownDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountDownDoc.h; sourceTree = "<group>"; };
 		6384EDCF0F34EB8E001B4F3D /* CountDownDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountDownDoc.m; sourceTree = "<group>"; };
 		6384EDD00F34EB8E001B4F3D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6384EDD50F34EBA0001B4F3D /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
-		6384EDD70F34EBA0001B4F3D /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6384EDDC0F34EBA0001B4F3D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6384EDE50F34EC25001B4F3D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6384EDE60F34EC25001B4F3D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,15 +78,11 @@
 		6384EE210F34F278001B4F3D /* StretchableTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StretchableTextView.m; sourceTree = "<group>"; };
 		6384EE310F34F71A001B4F3D /* CDError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDError.h; sourceTree = "<group>"; };
 		6384EE330F34F74B001B4F3D /* CDError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDError.m; sourceTree = "<group>"; };
-		6384EE380F34F7A0001B4F3D /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = Resources/English.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		63E0F3130F4A88A00013D8E1 /* TimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeFormatter.h; sourceTree = "<group>"; };
 		63E0F3140F4A88A00013D8E1 /* TimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeFormatter.m; sourceTree = "<group>"; };
 		63E1BE85126BD78C00A3D76D /* DocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentController.h; sourceTree = "<group>"; };
 		63E1BE86126BD78C00A3D76D /* DocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentController.m; sourceTree = "<group>"; };
 		63EFCC2525001DC5007CAF4E /* GradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GradientView.h; sourceTree = "<group>"; };
-		63EFCC2E250025E3007CAF4E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/CountDownDoc.xib; sourceTree = "<group>"; };
-		63EFCC30250025E3007CAF4E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Details.xib; sourceTree = "<group>"; };
-		63EFCC32250025E3007CAF4E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Main.xib; sourceTree = "<group>"; };
 		63EFCC36250042DA007CAF4E /* NSTimer+CountDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+CountDown.h"; sourceTree = "<group>"; };
 		63EFCC3725004303007CAF4E /* NSTimer+CountDown.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+CountDown.m"; sourceTree = "<group>"; };
 		63EFCC39250049AD007CAF4E /* Heartbeat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Heartbeat.h; sourceTree = "<group>"; };
@@ -133,6 +134,7 @@
 		2A37F4AAFDCFA73011CA2CEA /* CountDown */ = {
 			isa = PBXGroup;
 			children = (
+				6342EEA70F7695A900AE3733 /* Documentation */,
 				6384EDCC0F34EB8E001B4F3D /* Source */,
 				6384EDD30F34EBA0001B4F3D /* Resources */,
 				2A37F4C3FDCFA73011CA2CEA /* Frameworks */,
@@ -148,6 +150,14 @@
 				1058C7A8FEA54F5311CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6342EEA70F7695A900AE3733 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				6342EEA90F7695A900AE3733 /* TODO.txt */,
+			);
+			path = Documentation;
 			sourceTree = "<group>";
 		};
 		6384EDCC0F34EB8E001B4F3D /* Source */ = {
@@ -241,7 +251,7 @@
 		2A37F4A9FDCFA73011CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					8D15AC270486D014006FF6A4 = {
 						DevelopmentTeam = 2X3M9VFULE;
@@ -250,13 +260,14 @@
 			};
 			buildConfigurationList = C05733CB08A9546B00998B17 /* Build configuration list for PBXProject "CountDown" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				Base,
+				ja,
+				fr,
+				en,
+				de,
 			);
 			mainGroup = 2A37F4AAFDCFA73011CA2CEA /* CountDown */;
 			projectDirPath = "";
@@ -319,7 +330,7 @@
 		6384EDD40F34EBA0001B4F3D /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6384EDD50F34EBA0001B4F3D /* English */,
+				635A5015290B12D1006EE643 /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -327,7 +338,7 @@
 		6384EDD60F34EBA0001B4F3D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6384EDD70F34EBA0001B4F3D /* English */,
+				635A5016290B12D1006EE643 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -335,7 +346,7 @@
 		6384EE370F34F7A0001B4F3D /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6384EE380F34F7A0001B4F3D /* English */,
+				635A5017290B12D1006EE643 /* en */,
 			);
 			name = Localizable.strings;
 			path = ../Source;
@@ -344,7 +355,7 @@
 		63EFCC2D250025E3007CAF4E /* CountDownDoc.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				63EFCC2E250025E3007CAF4E /* English */,
+				635A5012290B12C6006EE643 /* Base */,
 			);
 			name = CountDownDoc.xib;
 			sourceTree = "<group>";
@@ -352,7 +363,7 @@
 		63EFCC2F250025E3007CAF4E /* Details.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				63EFCC30250025E3007CAF4E /* English */,
+				635A5013290B12C6006EE643 /* Base */,
 			);
 			name = Details.xib;
 			sourceTree = "<group>";
@@ -360,7 +371,7 @@
 		63EFCC31250025E3007CAF4E /* Main.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				63EFCC32250025E3007CAF4E /* English */,
+				635A5014290B12C6006EE643 /* Base */,
 			);
 			name = Main.xib;
 			sourceTree = "<group>";
@@ -375,6 +386,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -399,6 +411,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -421,6 +434,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				DEAD_CODE_STRIPPING = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/CountDown.pch;
@@ -429,7 +443,7 @@
 				"GCC_VERSION[sdk=macosx10.6][arch=x86_64]" = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				"SDKROOT[arch=ppc64]" = macosx10.6;
@@ -443,6 +457,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				DEAD_CODE_STRIPPING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Source/CountDown.pch;
 				GCC_VERSION = 4.0;
@@ -450,7 +465,7 @@
 				"GCC_VERSION[sdk=macosx10.6][arch=x86_64]" = 4.2;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				SDKROOT = macosx;
 				"SDKROOT[arch=ppc64]" = macosx10.6;
 				"SDKROOT[arch=x86_64]" = macosx10.6;
