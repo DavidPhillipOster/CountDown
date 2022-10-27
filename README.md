@@ -3,7 +3,7 @@ a macOS program displaying countdown timers, each in its own resizable window.
 
 ## To Build:
 
-* Open the Xcode project and in the Info panel of the Evaluate target change the `com.example` prefix of the bundle Identifier from `com.example.${PRODUCT_NAME:rfc1034identifier}`  to a domain you control.
+* Open the Xcode project and in the Info panel of the CountDown target change the `com.example` prefix of the bundle Identifier from `com.example.${PRODUCT_NAME:rfc1034identifier}`  to a domain you control.
 
 * Adjust how the code is signed by selecting the project in Xcode's file navigator, then the target, then in Xcode's Signing&Capabilities panel.
 
