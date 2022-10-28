@@ -1,6 +1,8 @@
 # CountDown
 a macOS program displaying countdown timers, each in its own resizable window.
 
+Compatible with every version of macOS from High Sierra (10.13) to Ventura (13.0).
+
 ## To Build:
 
 * Open the Xcode project and in the Info panel of the CountDown target change the `com.example` prefix of the bundle Identifier from `com.example.${PRODUCT_NAME:rfc1034identifier}`  to a domain you control.
